@@ -4,8 +4,10 @@ public class Prob05 {
 
 	public static void main(String[] args) {
 
+		StringBuilder sb = new StringBuilder();
+		
 		for (int i = 1; i < 100; i++) {
-			StringBuilder sb = new StringBuilder();
+			sb.delete(0, sb.length());
 			sb.append("");
 			int number = i;
 			String str = Integer.toString(number);
